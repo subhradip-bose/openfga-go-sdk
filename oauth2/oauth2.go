@@ -12,7 +12,7 @@ import (
 	"bytes"
 	"context"
 	"errors"
-	"github.com/openfga/go-sdk/oauth2/internal"
+	"github.com/subhradip-bose/openfga-go-sdk/oauth2/internal"
 	"net/http"
 	"net/url"
 	"strings"

@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	openfga "github.com/openfga/go-sdk"
-	"github.com/openfga/go-sdk/client"
-	"github.com/openfga/go-sdk/credentials"
+	openfga "github.com/subhradip-bose/openfga-go-sdk"
+	"github.com/subhradip-bose/openfga-go-sdk/client"
+	"github.com/subhradip-bose/openfga-go-sdk/credentials"
 	"os"
 )
 

@@ -7,7 +7,7 @@ package oauth2
 import (
 	"context"
 	"fmt"
-	"github.com/openfga/go-sdk/oauth2/internal"
+	"github.com/subhradip-bose/openfga-go-sdk/oauth2/internal"
 	"net/http"
 	"net/url"
 	"strconv"

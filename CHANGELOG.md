@@ -2,28 +2,28 @@
 
 ## v0.3.3
 
-### [0.3.3](https://github.com/openfga/go-sdk/compare/v0.3.2...v0.3.3) (2023-12-21)
+### [0.3.3](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.3.2...v0.3.3) (2023-12-21)
 
 - fix: WriteAuthorizationModel was not passing conditions to API
 - chore: add example project
 
 ## v0.3.2
 
-### [0.3.2](https://github.com/openfga/go-sdk/compare/v0.3.1...v0.3.2) (2023-12-20)
+### [0.3.2](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.3.1...v0.3.2) (2023-12-20)
 
 - fix: ListObjects was not passing context to API
 - chore: downgrade target go version to 1.20
 
 ## v0.3.1
 
-### [0.3.1](https://github.com/openfga/go-sdk/compare/v0.3.0...v0.3.1) (2023-12-19)
+### [0.3.1](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.3.0...v0.3.1) (2023-12-19)
 
 - feat: oauth2 client credentials support (#62), thanks @le-yams
 - fix: remove canonical import path from oauth2 packages (#64), thanks @bketelsen
 
 ## v0.3.0
 
-### [0.3.0](https://github.com/openfga/go-sdk/compare/v0.2.3...v0.3.0) (2023-12-11)
+### [0.3.0](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.2.3...v0.3.0) (2023-12-11)
 
 - feat!: initial support for conditions
 - feat: support specifying a port and path for the API (You can now set the `ApiUrl` to something like: `https://api.fga.exampleL8080/some_path`)
@@ -71,7 +71,7 @@ fgaClient, err := NewSdkClient(&ClientConfiguration{
 
 ## v0.2.3
 
-### [0.2.3](https://github.com/openfga/go-sdk/compare/v0.2.2...v0.2.3) (2023-10-13)
+### [0.2.3](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.2.2...v0.2.3) (2023-10-13)
 
 - fix: allow setting user agent
 - fix(client): resolve null pointer exceptions when getting auth model id
@@ -83,9 +83,9 @@ fgaClient, err := NewSdkClient(&ClientConfiguration{
 
 ## v0.2.2
 
-### [0.2.2](https://github.com/openfga/go-sdk/compare/v0.2.1...v0.2.2) (2023-04-21)
+### [0.2.2](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.2.1...v0.2.2) (2023-04-21)
 
-- feat(client): add OpenFgaClient wrapper see [docs](https://github.com/openfga/go-sdk/tree/main#readme), see the `v0.2.1` docs for [the OpenFgaApi docs](https://github.com/openfga/go-sdk/tree/v0.2.1#readme)
+- feat(client): add OpenFgaClient wrapper see [docs](https://github.com/subhradip-bose/openfga-go-sdk/tree/main#readme), see the `v0.2.1` docs for [the OpenFgaApi docs](https://github.com/subhradip-bose/openfga-go-sdk/tree/v0.2.1#readme)
 - feat(client): implement `BatchCheck` to check multiple tuples in parallel
 - feat(client): implement `ListRelations` to check in one call whether a user has multiple relations to an objects
 - feat(client): add support for a non-transactional `Write`
@@ -95,13 +95,13 @@ fgaClient, err := NewSdkClient(&ClientConfiguration{
 
 ## v0.2.1
 
-### [0.2.1](https://github.com/openfga/go-sdk/compare/v0.2.0...v0.2.1) (2023-01-17)
+### [0.2.1](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.2.0...v0.2.1) (2023-01-17)
 
 - chore(deps): upgrade `golang.org/x/net` dependency
 
 ## v0.2.0
 
-### [0.2.0](https://github.com/openfga/go-sdk/compare/v0.1.1...v0.2.0) (2022-12-14)
+### [0.2.0](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.1.1...v0.2.0) (2022-12-14)
 
 Updated to include support for [OpenFGA 0.3.0](https://github.com/openfga/openfga/releases/tag/v0.3.0)
 
@@ -117,13 +117,13 @@ Chore:
 
 ## v0.1.1
 
-### [0.1.1](https://github.com/openfga/go-sdk/compare/v0.1.0...v0.1.1) (2022-09-30)
+### [0.1.1](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.1.0...v0.1.1) (2022-09-30)
 
 - chore(deps): upgrade dependencies - dependency updates were accidentally reverted in v0.1.0 release
 
 ## v0.1.0
 
-### [0.1.0](https://github.com/openfga/go-sdk/compare/v0.0.3...v0.1.0) (2022-09-29)
+### [0.1.0](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.0.3...v0.1.0) (2022-09-29)
 
 - BREAKING: exported interface `TypeDefinitions` is now `WriteAuthorizationModelRequest`
     This is only a breaking change on the SDK, not the API. It was changed to conform to the proto changes in [openfga/api](https://github.com/openfga/api/pull/27).
@@ -131,7 +131,7 @@ Chore:
 
 ## v0.0.3
 
-### [0.0.3](https://github.com/openfga/go-sdk/compare/v0.0.2...v0.0.3) (2022-09-07)
+### [0.0.3](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.0.2...v0.0.3) (2022-09-07)
 
 - Fix incorrectly applying client_credentials validation to api_token cred method [openfga/sdk-generator#21](https://github.com/openfga/sdk-generator/pull/21)
 - Target go 1.19
@@ -140,7 +140,7 @@ Chore:
 
 ## v0.0.2
 
-### [0.0.2](https://github.com/openfga/go-sdk/compare/v0.0.1...v0.0.2) (2022-08-15)
+### [0.0.2](https://github.com/subhradip-bose/openfga-go-sdk/compare/v0.0.1...v0.0.2) (2022-08-15)
 
 Support for [ListObjects API]](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects)
 
@@ -162,7 +162,7 @@ data, response, err := apiClient.OpenFgaApi.ListObjects(context.Background()).Bo
 
 ## v0.0.1
 
-### [0.0.1](https://github.com/openfga/go-sdk/releases/tag/v0.0.1) (2022-06-16)
+### [0.0.1](https://github.com/subhradip-bose/openfga-go-sdk/releases/tag/v0.0.1) (2022-06-16)
 
 Initial OpenFGA Go SDK release
 - Support for [OpenFGA](https://github.com/openfga/openfga) API

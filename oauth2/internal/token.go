@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	internalutils "github.com/openfga/go-sdk/internal/utils"
+	internalutils "github.com/subhradip-bose/openfga-go-sdk/internal/utils"
 )
 
 const cMaxRetry = 3

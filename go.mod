@@ -1,4 +1,4 @@
-module github.com/openfga/go-sdk
+module github.com/subhradip-bose/openfga-go-sdk
 
 go 1.20
 

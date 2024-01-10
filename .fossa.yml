@@ -3,7 +3,7 @@ version: 3
 server: https://app.fossa.com
 
 project:
-  id: github.com/openfga/go-sdk
-  name: github.com/openfga/go-sdk
+  id: github.com/subhradip-bose/openfga-go-sdk
+  name: github.com/subhradip-bose/openfga-go-sdk
   link: openfga.dev
-  url: github.com/openfga/go-sdk
+  url: github.com/subhradip-bose/openfga-go-sdk

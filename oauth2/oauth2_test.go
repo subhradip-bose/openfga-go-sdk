@@ -8,7 +8,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/openfga/go-sdk/oauth2/internal"
+	"github.com/subhradip-bose/openfga-go-sdk/oauth2/internal"
 	"io"
 	"io/ioutil"
 	"net/http"

@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/openfga/go-sdk/oauth2/clientcredentials"
+	"github.com/subhradip-bose/openfga-go-sdk/oauth2/clientcredentials"
 )
 
 const ApiTokenHeaderKey = "Authorization"

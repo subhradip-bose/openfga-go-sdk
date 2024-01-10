@@ -1,5 +1,5 @@
 Go SDK for OpenFGA
-github.com/openfga/go-sdk
+github.com/subhradip-bose/openfga-go-sdk
 
 Copyright (c) 2022 the OpenFGA contributors <contact@openfga.dev> (https://openfga.dev)
 

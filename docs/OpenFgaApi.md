@@ -39,7 +39,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -132,7 +132,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -221,7 +221,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -310,7 +310,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -403,7 +403,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -494,7 +494,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -587,7 +587,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -678,7 +678,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -771,7 +771,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -864,7 +864,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -957,7 +957,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -1052,7 +1052,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -1149,7 +1149,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -1242,7 +1242,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
@@ -1335,7 +1335,7 @@ import (
     "context"
     "fmt"
     "os"
-    openfga "github.com/openfga/go-sdk"
+    openfga "github.com/subhradip-bose/openfga-go-sdk"
 )
 
 func main() {
