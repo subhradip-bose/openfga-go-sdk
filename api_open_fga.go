@@ -976,6 +976,9 @@ func (a *OpenFgaApiService) CreateStoreExecute(r ApiCreateStoreRequest) (CreateS
 		if localVarHTTPHeaderAccept != "" {
 			localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 		}
+		for key, val := range a.client.cfg.DefaultHeaders {
+			localVarHeaderParams[key] = val
+		}
 		// body params
 		localVarPostBody = r.body
 		req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams)
@@ -1231,6 +1234,10 @@ func (a *OpenFgaApiService) DeleteStoreExecute(r ApiDeleteStoreRequest) (*_netht
 		localVarHTTPHeaderAccept := selectHeaderAccept(localVarHTTPHeaderAccepts)
 		if localVarHTTPHeaderAccept != "" {
 			localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
+		}
+
+		for key, val := range a.client.cfg.DefaultHeaders {
+			localVarHeaderParams[key] = val
 		}
 		req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams)
 		if err != nil {
@@ -2261,7 +2268,6 @@ type ApiListStoresRequest struct {
 	ApiService        OpenFgaApi
 	pageSize          *int32
 	continuationToken *string
-	Headers           *map[string]string
 }
 
 func (r ApiListStoresRequest) PageSize(pageSize int32) ApiListStoresRequest {
@@ -2345,7 +2351,7 @@ func (a *OpenFgaApiService) ListStoresExecute(r ApiListStoresRequest) (ListStore
 			localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 		}
 
-		for key, val := range *r.Headers {
+		for key, val := range a.client.cfg.DefaultHeaders {
 			localVarHeaderParams[key] = val
 		}
 

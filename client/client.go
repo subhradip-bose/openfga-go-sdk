@@ -505,7 +505,7 @@ func (request *SdkClientListStoresRequest) GetOptions() *ClientListStoresOptions
 
 func (client *OpenFgaClient) ListStoresExecute(request SdkClientListStoresRequestInterface) (*ClientListStoresResponse, error) {
 	req := client.OpenFgaApi.ListStores(request.GetContext())
-	req.Headers = &client.config.DefaultHeaders
+
 	pageSize := getPageSizeFromRequest((*ClientPaginationOptions)(request.GetOptions()))
 	if pageSize != nil {
 		req = req.PageSize(*pageSize)
@@ -692,6 +692,7 @@ func (request *SdkClientDeleteStoreRequest) GetOptions() *ClientDeleteStoreOptio
 }
 
 func (client *OpenFgaClient) DeleteStoreExecute(request SdkClientDeleteStoreRequestInterface) (*ClientDeleteStoreResponse, error) {
+
 	_, err := client.OpenFgaApi.DeleteStore(request.GetContext()).Execute()
 	if err != nil {
 		return nil, err
