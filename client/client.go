@@ -487,6 +487,7 @@ type ClientListStoresResponse = fgaSdk.ListStoresResponse
 
 func (request *SdkClientListStoresRequest) Options(options ClientListStoresOptions) SdkClientListStoresRequestInterface {
 	request.options = &options
+
 	return request
 }
 
@@ -504,6 +505,7 @@ func (request *SdkClientListStoresRequest) GetOptions() *ClientListStoresOptions
 
 func (client *OpenFgaClient) ListStoresExecute(request SdkClientListStoresRequestInterface) (*ClientListStoresResponse, error) {
 	req := client.OpenFgaApi.ListStores(request.GetContext())
+	req.Headers = &client.config.DefaultHeaders
 	pageSize := getPageSizeFromRequest((*ClientPaginationOptions)(request.GetOptions()))
 	if pageSize != nil {
 		req = req.PageSize(*pageSize)
@@ -512,6 +514,7 @@ func (client *OpenFgaClient) ListStoresExecute(request SdkClientListStoresReques
 	if continuationToken != nil {
 		req = req.ContinuationToken(*continuationToken)
 	}
+
 	data, _, err := req.Execute()
 	if err != nil {
 		return nil, err
